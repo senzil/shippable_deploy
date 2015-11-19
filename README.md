@@ -2,7 +2,7 @@
 
 Shippable CI image from minv2.  
 
-[![Build Status](https://api.shippable.com/projects/564d150a55d5e20c00135462/badge?branchName=master)](https://app.shippable.com/projects/564d150a55d5e20c00135462/builds/latest)
+[//]: # [![Build Status]()](https://hub.docker.com/r/senzil/shippable_deploy)  
 
 Ver 0.0.1  
 Added Nodejs 0.12.7  

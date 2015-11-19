@@ -7,7 +7,6 @@ RUN gem install compass
 
 # Preinstall common node versions
 RUN mkdir -p ~/.nvm/versions
-RUN source ~/.nvm/nvm.sh
 RUN nvm install 5.0.0
 RUN nvm alias default 5.0.0
 RUN nvm use 5.0.0
