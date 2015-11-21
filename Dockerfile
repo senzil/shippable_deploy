@@ -4,8 +4,9 @@ MAINTAINER Pablo González <pablodgonzalez@gmail.com>
 
 # Preinstall common gems & Preinstall common node versions
 RUN gem install compass \
-    && mkdir -p ~/.nvm/versions \
-    && /bin/bash -c "source /home/shippable/.nvm/nvm.sh" \
+    && mkdir -p /home/shippable/.nvm/versions \
+    && mkdir -p /bin/versions \
+    && . /home/shippable/.nvm/nvm.sh \
     && nvm install 5.0.0 \
     && nvm alias default 5.0.0 \
     && nvm use 5.0.0 \
@@ -18,4 +19,4 @@ RUN gem install compass \
     && nvm reinstall-packages 5.0.0 \
     && nvm use 5.0.0
 
-CMD [ "/bin/bash" ]
+CMD /bin/bash
