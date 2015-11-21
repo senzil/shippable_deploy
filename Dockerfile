@@ -16,7 +16,7 @@ RUN gem install compass \
     && npm install -g jshint \
     && nvm install 0.12.7 \
     && nvm use 0.12.7 \
-    && nvm reinstall-packages 5.0.0 \
+    && nvm copy-packages 5.0.0 \
     && nvm use 5.0.0
 
 CMD /bin/bash
