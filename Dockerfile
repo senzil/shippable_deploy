@@ -19,4 +19,4 @@ RUN gem install compass \
     && nvm copy-packages 5.0.0 \
     && nvm use 5.0.0
 
-CMD /bin/bash
+CMD ["true"]
