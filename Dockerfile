@@ -19,6 +19,5 @@ RUN gem install compass \
     && nvm copy-packages 5.0.0 \
     && nvm use 5.0.0
 
-WORKDIR /home/shippable/
 ENV HOME /home/shippable/
 USER shippable
