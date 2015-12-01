@@ -2,6 +2,8 @@ FROM shippable/minv2:latest
 
 MAINTAINER Pablo González <pablodgonzalez@gmail.com>
 
+WORKDIR /home/shippable
+
 # Preinstall common gems & Preinstall common node versions
 RUN gem install compass \
     && mkdir -p /home/shippable/.nvm/versions \
@@ -21,4 +23,3 @@ RUN gem install compass \
 
 ENV HOME /home/shippable
 USER shippable
-WORKDIR /home/shippable
