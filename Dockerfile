@@ -2,8 +2,8 @@ FROM shippable/minv2:latest
 
 MAINTAINER Pablo González <pablodgonzalez@gmail.com>
 
-WORKDIR /home/shippable
-ENV HOME /home/shippable
+WORKDIR /home/shippable/
+ENV HOME /home/shippable/
 USER shippable
 
 # Preinstall common gems & Preinstall common node versions
